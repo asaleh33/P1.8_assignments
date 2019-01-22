@@ -18,7 +18,8 @@ if argnumber =="1":
 elif argnumber =="2":
     yval = [i ** 2 for i in xval]
 
-
+elif argnumber =="3":
+    yval = [i ** 3 for i in xval]
 
 # get plot
 plt.plot(xval,yval, alpha=0.5, color='red', linewidth=2)
