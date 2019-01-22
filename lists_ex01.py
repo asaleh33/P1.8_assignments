@@ -7,7 +7,7 @@ import sys
 
 
 if len(sys.argv) != 2:
-    print("Usage:", sys.argv[0], "1 \n1 y=f(x)")
+    print("Usage:", sys.argv[0], "1 2 3\n1 y=f(x)\n2 y=exp(x)\n2 y=sqrt(|x|)")
     sys.exit(0)
 
 
@@ -20,6 +20,12 @@ argnumber = str(sys.argv[1])
 
 if argnumber =="1":
     yval = xval
+
+elif argnumber == "2":
+    yval = np.exp(xval)
+
+elif argnumber == "3":
+    yval = np.sqrt(abs(xval))
 
 
 # get plot
