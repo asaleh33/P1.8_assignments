@@ -7,7 +7,8 @@ import sys
 
 
 if len(sys.argv) != 2:
-    print("Usage:", sys.argv[0], "1 \n1 y=f(x)")
+    print("Usage:", sys.argv[0], "1 2 3\n1 y=f(x)\n2 y=f(x)**2\n3 "
+    "y=f(x)**3")
     sys.exit(0)
 
 
