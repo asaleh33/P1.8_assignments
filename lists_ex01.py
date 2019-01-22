@@ -7,8 +7,10 @@ import sys
 
 
 if len(sys.argv) != 2:
-    print("Usage:", sys.argv[0], "1 2 3\n1 y=f(x)\n2 y=f(x)**2\n3 "
-    "y=f(x)**3")
+    print("Usage:", sys.argv[0], "1 2 3 4 5\n1 y=f(x)\n2 y=f(x)**2\n3 "
+    "y=f(x)**3\n4 y=exp(x)\n5 y=sqrt(|x|)")
+
+    
     sys.exit(0)
 
 
@@ -27,6 +29,13 @@ elif argnumber =="2":
 
 elif argnumber =="3":
     yval = [i ** 3 for i in xval]
+
+elif argnumber == "4":
+    yval = np.exp(xval)
+
+elif argnumber == "5":
+    yval = np.sqrt(abs(xval))
+
 
 # get plot
 plt.plot(xval,yval, alpha=0.5, color='red', linewidth=2)
