@@ -11,8 +11,8 @@ if len(sys.argv) != 2:
     sys.exit(0)
 
 
-start = -5
-stop = 5
+start = -3
+stop = 3
 step = 0.1
 xval = np.arange(start,stop,step)
 
