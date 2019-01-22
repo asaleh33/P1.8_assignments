@@ -15,6 +15,15 @@ argnumber = str(sys.argv[1])
 if argnumber =="1":
     yval = xval
 
+elif argnumber == "2":
+    yval = np.sin(xval)
+
+elif argnumber =="3":
+    yval = np.cos(xval)
+
+elif argnumber =="4":
+    yval = np.tan(xval)
+
 
 # get plot
 plt.plot(xval,yval, alpha=0.5, color='red', linewidth=2)
