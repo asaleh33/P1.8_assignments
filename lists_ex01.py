@@ -7,10 +7,8 @@ import sys
 
 
 if len(sys.argv) != 2:
-    print("Usage:", sys.argv[0], "1 2 3 4 5\n1 y=f(x)\n2 y=f(x)**2\n3 "
-    "y=f(x)**3\n4 y=exp(x)\n5 y=sqrt(|x|)")
-
-    
+    print("Usage:", sys.argv[0], "1 2 3 4 5 6 7 8\n1 y=f(x)\n2 y=f(x)**2\n3 "
+    "y=f(x)**3\n4 y=exp(x)\n5 y=sqrt(|x|)\n6 y=sin(x)\n7 y=cos(x)\n8 y=tan(x)")
     sys.exit(0)
 
 
@@ -35,6 +33,19 @@ elif argnumber == "4":
 
 elif argnumber == "5":
     yval = np.sqrt(abs(xval))
+
+elif argnumber == "6":
+    yval = np.sin(xval)
+
+elif argnumber =="7":
+    yval = np.cos(xval)
+
+elif argnumber =="8":
+    yval = np.tan(xval)
+
+else:
+    print("Wrong argument!")
+    sys.exit(1)
 
 
 # get plot
