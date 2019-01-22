@@ -7,7 +7,8 @@ import sys
 
 
 if len(sys.argv) != 2:
-    print("Usage:", sys.argv[0], "1 \n1 y=f(x)")
+    print("Usage:", sys.argv[0], "1 2 3\n1 y=f(x)\n2 y=f(x)**2\n3 "
+    "y=f(x)**3")
     sys.exit(0)
 
 
@@ -21,6 +22,11 @@ argnumber = str(sys.argv[1])
 if argnumber =="1":
     yval = xval
 
+elif argnumber =="2":
+    yval = [i ** 2 for i in xval]
+
+elif argnumber =="3":
+    yval = [i ** 3 for i in xval]
 
 # get plot
 plt.plot(xval,yval, alpha=0.5, color='red', linewidth=2)
