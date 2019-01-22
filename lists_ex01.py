@@ -7,7 +7,8 @@ import sys
 
 
 if len(sys.argv) != 2:
-    print("Usage:", sys.argv[0], "1 \n1 y=f(x)")
+    print("Usage:", sys.argv[0], "1 2 3 4\n1 y=f(x)\n2 y=sin(x)\n3 y=cos(x)\n4 "
+    "y=tan(x)")
     sys.exit(0)
 
 
@@ -30,6 +31,9 @@ elif argnumber =="3":
 elif argnumber =="4":
     yval = np.tan(xval)
 
+else:
+    print("Wrong argument!")
+    sys.exit(1)
 
 # get plot
 plt.plot(xval,yval, alpha=0.5, color='red', linewidth=2)
