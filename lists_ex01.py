@@ -5,6 +5,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 
+
+if len(sys.argv) != 2:
+    print("Usage:", sys.argv[0], "1 \n1 y=f(x)")
+    sys.exit(0)
+
+
 start = -5
 stop = 5
 step = 0.1
